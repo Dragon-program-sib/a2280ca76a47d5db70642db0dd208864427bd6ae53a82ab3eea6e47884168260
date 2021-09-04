@@ -19,6 +19,7 @@ class Controller extends BaseController
         $countNumber = mt_rand(5,15);
         for($i=0; $i<$countNumber; $i++) {
             $data[] = [
+                'id' => $i+1,
                 'title' => $faker->jobTitle(),
                 'description' => $faker->sentence(3),
                 'autor' => $faker->name(),

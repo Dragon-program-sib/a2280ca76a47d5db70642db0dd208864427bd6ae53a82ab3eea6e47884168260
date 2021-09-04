@@ -8,7 +8,9 @@ class NewsController extends Controller
 {
     public function index()
     {
-        return "Список новостей.";
+        return view('news.index', [
+            'newsList' => $this->getNews()
+        ]);
     }
 
     public function show(int $id)

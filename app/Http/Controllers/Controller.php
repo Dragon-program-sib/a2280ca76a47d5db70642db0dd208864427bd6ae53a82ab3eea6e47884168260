@@ -21,7 +21,7 @@ class Controller extends BaseController
             $data[] = [
                 'id' => $i + 1,
                 'title' => $faker->jobTitle(),
-                'description' => $faker->sentence(6),
+                'description' => "<strong>" . $faker->sentence(6) . "</strong>",
                 'autor' => $faker->name(),
                 'created_at' => now()
             ];

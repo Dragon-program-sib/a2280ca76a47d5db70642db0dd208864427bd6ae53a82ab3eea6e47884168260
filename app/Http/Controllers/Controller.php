@@ -16,12 +16,12 @@ class Controller extends BaseController
     {
         $faker = Factory::create('ru_RU');
         $data = [];
-        $countNumber = mt_rand(5,15);
-        for($i=0; $i<$countNumber; $i++) {
+        $countNumber = mt_rand(5, 15);
+        for ($i = 0; $i < $countNumber; $i++) {
             $data[] = [
-                'id' => $i+1,
+                'id' => $i + 1,
                 'title' => $faker->jobTitle(),
-                'description' => $faker->sentence(3),
+                'description' => $faker->sentence(6),
                 'autor' => $faker->name(),
                 'created_at' => now()
             ];

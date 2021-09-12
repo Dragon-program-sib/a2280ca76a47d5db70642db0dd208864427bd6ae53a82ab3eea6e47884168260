@@ -1,3 +1,4 @@
+@extends('layouts.main');
 <h1>Новости</h1>
 
 <?php foreach($newsList as $news): ?>

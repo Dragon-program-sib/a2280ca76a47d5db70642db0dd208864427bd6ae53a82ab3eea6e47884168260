@@ -1,3 +1,4 @@
+@extends('layouts.admin')
 <h2>Панель администратора</h2>
 
 @if(empty($newsList))
